@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/dataScreenTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="Real-Time Health Data"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/heartRateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dataScreenTitle"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:text="Heart Rate:"
+        android:textSize="20sp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/heartRateValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/heartRateLabel"
+        android:layout_toEndOf="@id/heartRateLabel"
+        android:text=" 78 bpm"
+        android:textSize="20sp"
+        android:textColor="#DA8721" />
+
+    <TextView
+        android:id="@+id/stepsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heartRateLabel"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:text="Steps Taken: "
+        android:textSize="20sp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/stepsValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10234"
+        android:layout_toEndOf="@id/stepsLabel"
+        android:layout_alignBaseline="@id/stepsLabel"
+        android:textSize="20sp"
+        android:textColor="#D85B18" />
+
+    <TextView
+        android:id="@+id/caloriesLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stepsLabel"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:text="Calories: "
+        android:textSize="20sp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/caloriesValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="250 kcal"
+        android:layout_toEndOf="@id/caloriesLabel"
+        android:layout_alignBaseline="@id/caloriesLabel"
+        android:textSize="20sp"
+        android:textColor="#EE0000" />
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_below="@id/caloriesValue"
+        android:layout_marginTop="200dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/graphImg"
+        android:src="@drawable/graph"/>
+
+</RelativeLayout>
